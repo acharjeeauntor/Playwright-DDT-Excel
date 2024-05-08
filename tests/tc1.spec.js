@@ -2,7 +2,7 @@ const { test, expect } = require("@playwright/test");
 const fs = require('fs');
 
 //test.describe.configure({ mode: 'serial' });
-test.only("TC 1", async ({ page }) => {
+test("TC 1", async ({ page }) => {
   await page.goto('https://computer-database.gatling.io/computers/');
 const arry = ["ACE","ARRA","123456","APEXC"]
   var x = 0;
@@ -180,6 +180,7 @@ const arry = ["ACE","ARRA","123456","APEXC"]
  
  
 //   await page.pause();
- 
+
+
  
 // });
