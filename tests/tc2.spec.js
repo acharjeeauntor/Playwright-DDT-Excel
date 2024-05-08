@@ -2,7 +2,7 @@ const { test, expect } = require("@playwright/test");
 import data from "../data.json"
 
 //test.describe.configure({ mode: 'serial' });
-test.only("TC 2", async ({ page }) => {
+test("TC 2", async ({ page }) => {
   await page.goto('https://computer-database.gatling.io/computers/');
     await page.locator('#searchbox').fill(data.value);
     console.log(data.value)
